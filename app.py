@@ -5,15 +5,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return "Hello Gad	hi!"
+	return "Hello yashi!"
 
-@app.route('/date')
+@app.route('/date/')
 def date():
 	import datetime
 	today = datetime.date.today()
 	return str(today)	
 
-@app.route('/power')
+@app.route('/power/')
 def power():
 	x = int(request.args.get('x'))
 	y = int(request.args.get('y'))
@@ -21,7 +21,7 @@ def power():
 	myrsultinjson = "{'input' : '" + str(x) + " & " + str(y) +"', 'output' : " + str(res) +"}"
 	return str(myrsultinjson)
 
-@app.route('/wordcloud')
+@app.route('/wordcloud/')
 def wordcloud():
 	query = request.args.get('query')
 	twitter = MyTwitterAPI()
@@ -29,8 +29,8 @@ def wordcloud():
 	mc = MyCloud()
 	mc.generate(query, result)
 	png_file = query + '.png'
-	print png_file
+	print (png_file)
 	return send_file(png_file)
 
 if __name__ == '__main__':
-	app.run(debug=True, host='0.0.0.0')
+	app.run(debug=True)
