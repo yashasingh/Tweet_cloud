@@ -27,15 +27,18 @@ python3 app.py
 ```
 # Result
 Now u access my wordcloud Api using url using 127.0.0.1:5000/wordcloud/query="your_query"
-The result obtained would be as follows :
+The result obtained would be as follows :  
 query = despacito
 ![alt text](https://raw.githubusercontent.com/yashasingh/Tweet_cloud/master/assets/despacito.png)
+
 query = enrique
 ![alt text](https://raw.githubusercontent.com/yashasingh/Tweet_cloud/master/assets/enrique.png)
+
 query = sachin
 ![alt text](https://raw.githubusercontent.com/yashasingh/Tweet_cloud/master/assets/sachin.png)
+
 query = virat
-![alt text](https://raw.githubusercontent.com/yashasingh/Tweet_cloud/master/assets/virat.png)
+![alt text](https://raw.githubusercontent.com/yashasingh/Tweet_cloud/master/assets/virat.png) 
 
 
 
